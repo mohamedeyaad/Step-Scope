@@ -18,8 +18,8 @@ int threshold = 600; //fsr_threshold
 int port = 5055;
 WiFiServer server(port);
 
-const char* ssid = "iPhone";
-const char* password = "momo1234";
+const char* ssid = "YOUR_WIFI_SSID";
+const char* password = "YOUR_WIFI_PASSWORD";
 
 int ledPin = LED_BUILTIN; // GPIO13---D7 of NodeMCU
 
