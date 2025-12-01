@@ -14,10 +14,23 @@ import numpy as np
 from scipy.signal import butter, filtfilt
 import matplotlib.pyplot as plt
 import pandas as pd
+import os
 
+# Get the directory where this script is running (.../biomedical_project/scripts)
+script_dir = os.path.dirname(os.path.abspath(__file__))
+# Go UP one level to the parent directory (.../biomedical_project)
+parent_dir = os.path.dirname(script_dir)
+# Now go DOWN into gui/graphics
+path = os.path.join(parent_dir, "gui", "graphics")
+# Optional: Print it to check if it's correct when you run it
+print("Graphics Path:", path)
+
+"""
 # Defining the paths
 path = "/home/mooeyad//catkin_ws/src/biomedical_project/gui/graphics"
+"""
 path_saving = "project/saved_data"
+
 
 # Defining and setting parameters for the root GUI window
 root = Tk()
